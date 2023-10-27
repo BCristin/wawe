@@ -1,0 +1,28 @@
+.title {
+	font-family: 'Raleway';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 56px;
+
+	position: relative;
+
+	text-align: center;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+
+	color: #01353e;
+
+	&::after {
+		font-size: 72px;
+		line-height: 85px;
+
+		position: absolute;
+		top: 3px;
+		// right: -10px;
+
+		content: '/';
+		letter-spacing: 0.6px;
+
+		color: #00b2a0;
+	}
+}
