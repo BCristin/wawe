@@ -165,7 +165,7 @@ select {
   font-size: 72px;
   line-height: 85px;
   position: absolute;
-  top: 3px;
+  bottom: -30px;
   content: "/";
   letter-spacing: 0.6px;
   color: #00b2a0;
@@ -299,10 +299,10 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 100px;
 }
 .receive__card {
-  width: 350px;
-  margin-bottom: 100px;
+  max-width: 350px;
 }
 .receive__card-inner {
   display: -webkit-box;
@@ -329,7 +329,7 @@ select {
           justify-content: space-between;
 }
 .receive__text {
-  width: 600px;
+  max-width: 600px;
 }
 .receive__text p + p {
   margin-top: 30px;
@@ -360,7 +360,7 @@ select {
 
 .conquer {
   background: url("../img/conquer-bg.png") no-repeat;
-  background-position: right 82%;
+  background-position: right 200px;
   background-size: 50%;
   padding-top: 200px;
   padding-bottom: 147px;
@@ -855,6 +855,70 @@ select {
           justify-content: center;
 }
 
+@media (max-width: 1100px) {
+  .about,
+  .receive,
+  .conquer,
+  .gallery,
+  .blockquote,
+  .video,
+  .indicators,
+  .blog,
+  .team,
+  .service,
+  .map,
+  .contact,
+  .footer {
+    padding: 70px 0;
+  }
+  .about__title,
+  .receive__title,
+  .conquer__title,
+  .gallery__title,
+  .blockquote__title,
+  .video__title,
+  .indicators__title,
+  .blog__title,
+  .team__title,
+  .service__title,
+  .map__title,
+  .contact__title,
+  .footer__title {
+    margin-bottom: 40px;
+  }
+  .about__desc {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 30px;
+  }
+  .about__desc-p {
+    max-width: calc((100% - 30px) / 2);
+  }
+  .receive__content {
+    gap: 60px;
+  }
+  .receive__cards {
+    gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .conquer {
+    background-position: right 75px;
+  }
+}
+@media (max-width: 1060px) {
+  .conquer {
+    background-image: none;
+  }
+  .conquer__inner {
+    max-width: 100%;
+  }
+}
 @media (max-width: 970px) {
   .header {
     position: relative;
@@ -906,10 +970,40 @@ select {
   }
 }
 @media (max-width: 740px) {
+  .title {
+    font-size: 7.5vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .title::after {
+    font-size: 11.25vw;
+  }
   .header__title {
     font-size: 27vw;
   }
   .header__subtitle {
     font-size: 3.2vw;
+  }
+  .receive__card {
+    max-width: 100%;
+    padding: 0 50px;
+  }
+  .receive__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .receive__info {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .about__desc-p {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

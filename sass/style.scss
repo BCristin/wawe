@@ -121,10 +121,10 @@
 	&__cards {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 100px;
 	}
 	&__card {
-		width: 350px;
-		margin-bottom: 100px;
+		max-width: 350px;
 	}
 
 	&__card-inner {
@@ -142,7 +142,7 @@
 		justify-content: space-between;
 	}
 	&__text {
-		width: 600px;
+		max-width: 600px;
 		p + p {
 			margin-top: 30px;
 		}
@@ -173,7 +173,7 @@
 }
 .conquer {
 	background: url('../img/conquer-bg.png') no-repeat;
-	background-position: right 82%;
+	background-position: right 200px;
 	background-size: 50%;
 	padding-top: 200px;
 	padding-bottom: 147px;
