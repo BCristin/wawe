@@ -9,3 +9,10 @@ $(function () {
 Fancybox.bind('[data-fancybox]', {
 	// Your custom options
 });
+
+const btn = document.querySelector('.menu__btn-burgher');
+const nav = document.querySelector('.header__nav');
+
+btn.addEventListener('click', () => {
+	nav.classList.toggle('open');
+});

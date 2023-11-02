@@ -2,7 +2,7 @@
 @import 'slick';
 
 .container {
-	width: 1220px;
+	max-width: 1220px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
@@ -69,10 +69,12 @@
 .menu {
 	margin: auto;
 	padding-right: 60px;
+
 	ul {
 		display: flex;
 		gap: 45px;
 		list-style: none;
+
 		a {
 			color: #fff;
 			font-family: Roboto Condensed;
@@ -82,7 +84,14 @@
 			line-height: normal;
 			letter-spacing: 0.6px;
 			text-decoration: none;
+			padding-bottom: 5px;
+			&:hover {
+				border-bottom: 1px solid #00b2a0;
+			}
 		}
+	}
+	&__btn-burgher {
+		display: none;
 	}
 }
 
@@ -590,3 +599,5 @@
 	display: flex;
 	justify-content: center;
 }
+
+@import 'media';
