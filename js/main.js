@@ -12,7 +12,8 @@ Fancybox.bind('[data-fancybox]', {
 
 const btn = document.querySelector('.menu__btn-burgher');
 const nav = document.querySelector('.header__nav');
-
-btn.addEventListener('click', () => {
-	nav.classList.toggle('open');
-});
+if (btn) {
+	btn.addEventListener('click', () => {
+		nav.classList.toggle('open');
+	});
+}
