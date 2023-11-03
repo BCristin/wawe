@@ -1,4 +1,5 @@
 html {
+  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -140,6 +141,10 @@ select {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1220px;
   padding: 0 10px;
@@ -179,18 +184,26 @@ select {
   color: #242121;
 }
 
-.header {
-  background: url("../img/bg.png") no-repeat center center/cover;
-  height: 100vh;
-  padding: 35px 0 92px;
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: url("../img/bg.png") no-repeat;
 }
-.header__nav {
+.nav__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.header {
+  background: url("../img/bg.png") no-repeat center center/cover;
+  height: 100vh;
+  padding: 35px 0 92px;
+  margin-top: -63px;
 }
 .header__content {
   height: calc(100vh - 95px);
